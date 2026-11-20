@@ -24,7 +24,7 @@ jobs:
       - name: Secrets FTP manquants
         if: ${{ env.FTP_SERVER == '' }}
         run: echo "::warning::Ajoutez FTP_SERVER, FTP_USERNAME et FTP_PASSWORD dans Settings > Secrets > Actions, puis relancez ce workflow."
-      - name: Envoi FTP vers public_html
+      - name: Envoi FTP vers domains/crfperfection.pro/public_html
         if: ${{ env.FTP_SERVER != '' }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -32,4 +32,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/client/
-          server-dir: public_html/
+          server-dir: domains/crfperfection.pro/public_html/
