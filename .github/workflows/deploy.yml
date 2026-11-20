@@ -3,6 +3,9 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+concurrency:
+  group: deploiement
+  cancel-in-progress: true
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -24,7 +27,7 @@ jobs:
       - name: Secrets FTP manquants
         if: ${{ env.FTP_SERVER == '' }}
         run: echo "::warning::Ajoutez FTP_SERVER, FTP_USERNAME et FTP_PASSWORD dans Settings > Secrets > Actions, puis relancez ce workflow."
-      - name: Envoi FTP vers domains/crfperfection.pro/public_html
+      - name: Envoi FTP (racine du compte FTP crfperfection.pro)
         if: ${{ env.FTP_SERVER != '' }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
@@ -32,4 +35,5 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/client/
-          server-dir: domains/crfperfection.pro/public_html/
+          server-dir: ./
+          timeout: 120000
