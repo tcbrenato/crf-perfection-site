@@ -15,11 +15,19 @@ jobs:
         uses: actions/cache@v4
         with: { path: public/img, key: img-${{ hashFiles('images/**') }} }
       - run: npm run build
+      - name: Secrets FTP manquants
+        if: ${{ env.FTP_SERVER == '' }}
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
+        run: echo "::warning::Ajoutez FTP_SERVER, FTP_USERNAME et FTP_PASSWORD dans Settings > Secrets > Actions, puis relancez ce workflow."
       - name: Envoi FTP vers public_html
+        if: ${{ env.FTP_SERVER != '' }}
+        env:
+          FTP_SERVER: ${{ secrets.FTP_SERVER }}
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./dist/client/
-          server-dir: /public_html/
+          server-dir: public_html/
