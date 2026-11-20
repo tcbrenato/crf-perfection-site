@@ -1,0 +1,43 @@
+# CRF Perfection : Hostinger (Apache)
+Options -Indexes
+DirectorySlash On
+RewriteEngine On
+
+# HTTPS + domaine principal sans www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://crfperfection.pro%{REQUEST_URI} [L,R=301]
+
+# Redirections 301 depuis l'ancien site (voir docs/REDIRECTIONS.md)
+RewriteRule ^about/company-overview/?$ /qui-sommes-nous/ [L,R=301]
+RewriteRule ^about/resources/?$ /qui-sommes-nous/ [L,R=301]
+RewriteRule ^professional-training-services/?$ /catalogue-2027/ [L,R=301]
+RewriteRule ^training-development-hub/?$ /catalogue-2027/ [L,R=301]
+RewriteRule ^strategic-consulting-services/?$ /nos-activites/diagnostic-conseil/ [L,R=301]
+RewriteRule ^research-studies-services/?$ /nos-activites/recherche-appliquee/ [L,R=301]
+RewriteRule ^conference-organization-services/?$ /copaf/ [L,R=301]
+
+# Pages pré-rendues : /chemin → /chemin/index.html ; sinon 404 soignée
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
+RewriteRule ^(.*)$ /$1/index.html [L]
+ErrorDocument 404 /404.html
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self' https://ivgxquhehuxqdxgnbmvf.supabase.co; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"
+  <FilesMatch "\.(js|css|woff2?|avif|webp|png|jpg|svg)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(html|xml|txt)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml text/xml
+</IfModule>

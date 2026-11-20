@@ -80,3 +80,10 @@
   --header-h: 76px;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 }
+
+/* Rééquilibrage demandé par le DG : moins de rouge, plus de bleu nuit.
+   Le rouge vif n'est plus utilisé ; le bordeaux est réservé aux boutons principaux et à un mot accentué sur fond clair. */
+:root {
+  --accent-on-dark: var(--c-navy-300);
+  --grad-bandeau: linear-gradient(100deg, var(--c-navy-800) 0%, var(--c-navy-700) 100%);
+}

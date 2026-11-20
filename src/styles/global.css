@@ -158,3 +158,15 @@ a.bandeau:hover { transform: translateX(4px); }
 /* Photo */
 .photo { position: relative; overflow: hidden; border-radius: var(--radius-lg); background: var(--c-navy-800); }
 .photo img { width: 100%; height: 100%; object-fit: cover; }
+
+/* — Palette rééquilibrée (bleu nuit dominant) — */
+.eyebrow { color: var(--c-navy-600); }
+.eyebrow::before { content: ''; width: 24px; height: 2px; background: currentColor; border-radius: 2px; }
+.section--dark .eyebrow, .on-dark .eyebrow { color: var(--c-navy-300); background: none; padding: 0; border-radius: 0; }
+.badge { background: var(--c-navy); }
+.badge--outline { background: transparent; color: var(--c-navy); }
+.card__num { background: var(--c-navy); }
+.bandeau { border: 1px solid var(--border-on-dark); }
+.bandeau__icon { border-color: rgba(255, 255, 255, 0.45); }
+.link-arrow { color: var(--c-navy); }
+.btn--primary:hover { background: var(--c-navy-800); }

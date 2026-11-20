@@ -11,7 +11,16 @@ Statut : étape 1 (système de design + accueil). Mise à jour après réception
 - Banque d'images : 4 albums COPAF 2026 (936 photos) + photos du PDF. 41 photos retenues (`images/source/`).
 - Chiffres, certifications ISO/QUALIOPI et témoignages de l'ancien site : non repris (aucune preuve fournie).
 
-## 0 bis. Nouveaux points (étape 1)
+## 0 ter. Mise en ligne (étapes 2–4 accélérées à la demande du DG)
+- **Couleurs** : le rouge vif n'est plus utilisé (demande du DG : trop de rouge). Bleu nuit dominant ; bordeaux réservé aux boutons principaux et à un mot accentué sur fond clair. Le problème de contraste du rouge vif disparaît.
+- **Supabase** : nouveau projet « crf-perfection-site » (UE). Tables contacts, inscriptions, participants, inscription_items, formations (22 codes, tarifs du Word). RLS active, aucune lecture publique (testé). Envoi via fonctions validées côté serveur (honeypot, limitation de débit, contrôle des champs, prix capturé côté serveur).
+- **E-mails de confirmation et de notification : NON ACTIFS.** Il faut un service d'envoi (Resend, Brevo…) et une clé API, plus SPF/DKIM sur crfperfection.pro. En attendant, les demandes sont consultables dans /admin.
+- **Admin** : créer le(s) compte(s) dans Supabase (Authentication → Users), puis m'indiquer l'e-mail à ajouter à la table admins.
+- **Capacités par session** : colonne `capacite` de la table formations, à renseigner.
+- **Version anglaise** : non livrée (sélecteur EN affiché « en préparation »). TODO-EN : toutes les pages.
+- **Mentions légales, confidentialité, conditions d'inscription** : modèles publiés avec des [À FOURNIR].
+
+## 0 bis. Points de l'étape 1
 - **Contraste de la charte** : le rouge vif #C8202F sur bleu nuit #1B2A41 donne 2,55:1, sous le minimum WCAG AA (3:1 pour les grands titres, 4,5:1 pour le texte). Choix appliqué : mot accentué des titres en rouge vif (comme exigé) ; mini-étiquettes en pastille rouge vif avec texte blanc (5,67:1, conforme, comme la couverture du PDF). Lighthouse signalera les mots accentués. À trancher : garder (exception assumée) ou éclaircir uniquement la teinte de ces mots.
 - **Bandeau « Recherche appliquée »** de l'accueil : aucun texte source dans le Word (les 4 rubriques n'incluent pas la recherche). Texte provisoire : « Études au service des décisions des autorités portuaires. » À valider ou remplacer.
 - **Droit à l'image** : les photos COPAF montrent des personnes identifiables. Confirmer que leur usage sur le site est couvert (accord des participants / mention).
