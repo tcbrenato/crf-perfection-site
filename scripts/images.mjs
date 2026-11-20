@@ -1,7 +1,7 @@
 // Génère les variantes AVIF/WebP responsives des photos de images/source et images/catalogue-pdf.
 // Sortie : public/img/<nom>-<largeur>.<ext> + src/generated/images.json (dimensions, pour srcset et ratio).
 import sharp from 'sharp';
-import { readdir, mkdir, writeFile, stat } from 'node:fs/promises';
+import { readdir, mkdir, writeFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 
@@ -27,7 +27,7 @@ for (const dir of SOURCES) {
     for (const w of widths) {
       for (const [ext, opts] of [['avif', { quality: 52 }], ['webp', { quality: 74 }]]) {
         const out = path.join(OUT, `${name}-${w}.${ext}`);
-        if (existsSync(out) && (await stat(out)).mtimeMs > (await stat(src)).mtimeMs) continue;
+        if (existsSync(out)) continue; // déjà générée (cache CI : les dates de fichiers ne sont pas fiables après checkout)
         await sharp(src).rotate().resize({ width: w }).toFormat(ext, opts).toFile(out);
       }
     }
