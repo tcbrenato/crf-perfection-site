@@ -1,0 +1,136 @@
+/*
+ * Langage visuel aligné sur le catalogue PDF V3 : titres centrés, contenants blancs sur fond gris clair,
+ * panneaux bleu nuit à icône, tableaux à en-tête bleu nuit, pastilles d'informations.
+ */
+
+/* Titres de section centrés, mini-étiquette bordeaux discrète au-dessus */
+.section-head { margin-inline: auto; text-align: center; justify-items: center; max-width: 52rem; margin-bottom: var(--s-5); }
+.section-head .lead { margin-inline: auto; }
+.section-head .eyebrow, .eyebrow { color: var(--c-bordeaux); }
+.eyebrow::before { display: none; }
+.section--dark .eyebrow, .on-dark .eyebrow { color: var(--c-navy-300); }
+.h2 { letter-spacing: -0.025em; }
+
+/* Contenant blanc arrondi (comme les pages du PDF) */
+.box {
+  background: var(--c-white); border: 1px solid var(--border); border-radius: 28px;
+  padding: clamp(1rem, 0.5rem + 2vw, 2rem); display: grid; gap: var(--s-2);
+}
+.box--narrow { max-width: 56rem; margin-inline: auto; }
+
+/* Panneau bleu nuit à icône */
+.npanel {
+  display: grid; grid-template-columns: auto 1fr auto; gap: var(--s-2) var(--s-3); align-items: center;
+  background: var(--c-navy); color: var(--c-white); border-radius: 18px; padding: var(--s-3);
+  text-decoration: none;
+}
+.npanel__icon {
+  width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center;
+  border: 1.5px solid rgba(255, 255, 255, 0.55); flex: none; font-weight: 700; font-size: var(--fs-lg);
+}
+.npanel__icon svg { width: 24px; height: 24px; stroke-width: 1.6; }
+.npanel__title { font-weight: 700; font-size: var(--fs-base); line-height: 1.3; }
+.npanel__text { color: rgba(255, 255, 255, 0.86); font-size: var(--fs-sm); line-height: 1.55; margin-top: 4px; }
+.npanel__text ul { padding-left: 1.1em; display: grid; gap: 4px; margin-top: 4px; }
+.npanel__aside { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+a.npanel { transition: background-color 0.2s var(--ease); }
+a.npanel:hover { background: var(--c-navy-800); }
+.npanel-list { display: grid; gap: var(--s-2); list-style: none; padding: 0; margin: 0; }
+@media (max-width: 640px) {
+  .npanel { grid-template-columns: auto 1fr; padding: var(--s-2) var(--s-2); }
+  .npanel__aside { grid-column: 2; justify-content: flex-start; }
+  .npanel__icon { width: 44px; height: 44px; }
+}
+
+/* Puces de codes (blanches sur bleu nuit, bleu nuit sur clair) */
+.code {
+  display: inline-flex; align-items: center; justify-content: center; min-width: 2.6em;
+  padding: 0.25em 0.6em; border-radius: 8px; font-size: var(--fs-xs); font-weight: 800; letter-spacing: 0.02em;
+  background: var(--c-white); color: var(--c-navy); text-decoration: none;
+}
+.code--navy { background: var(--c-navy); color: var(--c-white); }
+.badge { border-radius: 8px; background: var(--c-navy); }
+
+/* Pastilles d'informations clés (durée, lieu, dates, coût) */
+.pills { display: flex; flex-wrap: wrap; gap: var(--s-1); list-style: none; padding: 0; margin: 0; }
+.pills li {
+  display: inline-flex; align-items: center; gap: 0.45em; padding: 0.45em 0.95em;
+  border: 1px solid var(--c-navy-200); border-radius: var(--radius-pill); background: var(--c-white);
+  font-size: var(--fs-sm); font-weight: 600; color: var(--c-navy);
+}
+.pills svg { width: 16px; height: 16px; color: var(--c-navy-600); flex: none; }
+.pills--center { justify-content: center; }
+
+/* Tableau récapitulatif à en-tête bleu nuit */
+.table-wrap { border-radius: 18px; border: 1px solid var(--border); }
+.table thead th { background: var(--c-navy); color: var(--c-white); font-weight: 700; letter-spacing: 0.1em; }
+.table td { vertical-align: middle; }
+.table tbody tr:nth-child(even) td { background: #fafbfc; }
+.table .t-title { font-weight: 700; display: block; }
+.table .t-sub { color: var(--text-muted); font-size: var(--fs-xs); display: block; margin-top: 2px; }
+.table .t-group td { background: var(--bg-light) !important; font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--c-navy); }
+.table a { color: inherit; }
+@media (max-width: 720px) {
+  .table--stack thead { display: none; }
+  .table--stack tr { display: grid; grid-template-columns: auto 1fr; gap: 2px var(--s-2); padding: var(--s-2); border-bottom: 1px solid var(--border); }
+  .table--stack td { border: 0; padding: 0; background: none !important; }
+  .table--stack td:first-child { grid-row: span 4; }
+  .table--stack .t-group { display: block; }
+  .table--stack .t-group td { display: block; padding: var(--s-1) 0; }
+}
+
+/* Hero type « couverture » : centré, sans photo */
+.cover { text-align: center; padding-block: clamp(5rem, 3.5rem + 5vw, 8.5rem); }
+.cover__inner { display: grid; gap: var(--s-3); justify-items: center; max-width: 54rem; margin-inline: auto; }
+.cover__title { font-size: clamp(2.4rem, 1.5rem + 3.6vw, 4.25rem); }
+.cover__lead { font-size: var(--fs-lg); color: var(--text-on-dark-muted); max-width: 44rem; }
+.cover .btn-row { justify-content: center; }
+.cover__themes { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--s-1) 0; list-style: none; padding: 0; margin-top: var(--s-3); font-weight: 700; }
+.cover__themes li { padding-inline: var(--s-2); }
+.cover__themes li + li { border-left: 1px solid var(--border-on-dark); }
+.cover__slogan { font-weight: 700; color: var(--c-white); }
+
+/* Fiche formation (style page du PDF) */
+.fiche-head { display: grid; gap: var(--s-2); justify-items: center; text-align: center; max-width: 52rem; margin: 0 auto var(--s-4); }
+.fiche-head__tag { display: flex; align-items: center; gap: var(--s-1); }
+.fiche-head__tag .eyebrow { font-size: var(--fs-xs); }
+.fiche-head h1 { font-size: var(--fs-2xl); }
+
+/* Cartes formation plus sobres */
+.fcard { border-radius: 20px; padding: var(--s-3) var(--s-4); gap: var(--s-2); }
+.fcard__title { font-size: var(--fs-lg); }
+.fcard .facts--4 { display: none; }
+.fcard__actions { border-top: 0; padding-top: 0; }
+.fcard__detail .npanel-list { margin-top: var(--s-1); }
+
+/* Photo large arrondie sous un contenant */
+.wide-photo { aspect-ratio: 21 / 9; border-radius: 22px; overflow: hidden; }
+.wide-photo picture, .wide-photo img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Grille de pays COPAF sur clair */
+.countries { display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr)); gap: var(--s-2); list-style: none; padding: 0; margin: 0; }
+.countries li { text-align: center; padding: var(--s-3) var(--s-2); border-radius: 16px; border: 1px solid var(--border-on-dark); display: grid; gap: 4px; }
+.countries strong { font-size: var(--fs-base); }
+.countries span { font-size: var(--fs-sm); color: var(--text-on-dark-muted); }
+.pill-solid { display: inline-flex; padding: 0.55em 1.3em; border-radius: var(--radius-pill); background: var(--c-white); color: var(--c-navy); font-weight: 700; font-size: var(--fs-sm); }
+
+/* Éditorial sans photo */
+.edito { display: grid; gap: var(--s-3); max-width: 46rem; margin-inline: auto; text-align: left; }
+.edito blockquote { margin: 0; font-size: var(--fs-xl); font-weight: 600; line-height: 1.45; letter-spacing: -0.01em; color: var(--c-navy); }
+.edito p { color: var(--text); }
+.edito .quote__sign { border-left-color: var(--c-bordeaux); }
+
+/* Étapes numérotées en panneaux */
+.steps { display: grid; grid-template-columns: 1fr; gap: var(--s-2); }
+.npanel--meta { grid-template-columns: auto 1fr; }
+.meta-grid { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: var(--s-2) var(--s-3); }
+.meta-grid dt { font-size: var(--fs-xs); font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--c-navy-300); }
+.meta-grid dd { margin: 4px 0 0; font-size: var(--fs-sm); }
+.fcard .npanel { padding: var(--s-2) var(--s-3); }
+
+/* Correctifs de revue */
+.section-head > .eyebrow, .cover__inner > .eyebrow, .fiche-head .eyebrow { justify-self: center; }
+.npanel-list.box--narrow, .table-wrap.box--narrow, .countries.box--narrow, .wide-photo.box--narrow, .box.box--narrow { margin-inline: auto; max-width: 56rem; }
+.table a.code--navy, .code--navy { color: var(--c-white); }
+.table td:nth-child(3) { white-space: nowrap; }
+.box--narrow > .btn-row { justify-content: center; }

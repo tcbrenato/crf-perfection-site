@@ -7,6 +7,7 @@ import '@fontsource/inter/700.css';
 import '@fontsource/inter/800.css';
 import '@/styles/global.css';
 import '@/styles/layout.css';
+import '@/styles/v3.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { NotFound } from '@/pages/NotFound';

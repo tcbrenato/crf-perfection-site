@@ -27,26 +27,19 @@ export function FormationPage({ slug: slugProp }: { slug?: string }) {
         description={`${f.reference} : ${f.objectif ?? f.intitule} ${f.duree ?? ''}, ${lieuFormation(f)}, ${periodeFormation(f)}.`.slice(0, 300)}
         jsonLd={[courseJsonLd(f)]}
       />
-      <section className="section section--dark on-dark fiche-hero" aria-labelledby="fiche-t">
+      <section className="section section--light">
         <div className="container">
           <Link to={`/catalogue-2027#${fam.ancre}`} className="link-arrow"><ArrowLeft aria-hidden="true" /> {fam.nom}</Link>
-          <div className="fiche-hero__copy">
-            <span className="badge badge--light">{f.reference}</span>
-            <h1 id="fiche-t" className="h2">{f.intitule}</h1>
-            <p className="hero__lead">{f.cible}</p>
+          <div className="fiche-head">
+            <div className="fiche-head__tag"><span className="code code--navy">{f.code}</span><span className="eyebrow">{fam.nom} · {f.cible}</span></div>
+            <h1 id="fiche-t">{f.intitule}</h1>
+            <ul className="pills pills--center" aria-label="Informations clés">
+              {infos.map(({ icon: Icon, t, v }) => <li key={t}><Icon aria-hidden="true" /><span className="sr-only">{t} : </span>{v}</li>)}
+              {f.hebergement && <li>Hébergement : {f.hebergement.toLowerCase()}</li>}
+            </ul>
           </div>
-        </div>
-      </section>
-
-      <section className="section section--light">
-        <div className="container fiche-page">
-          <ul className="grid grid--4" role="list">
-            {infos.map(({ icon: Icon, t, v }) => (
-              <li key={t} className="card info"><Icon aria-hidden="true" /><span className="info__t">{t}</span><span className="info__v">{v}</span></li>
-            ))}
-          </ul>
-          {f.objectif && <p className="fiche-page__obj"><strong>Objectif.</strong> {f.objectif}</p>}
-          <div className="card"><FicheDetail f={f} /></div>
+          <div className="box box--narrow"><FicheDetail f={f} /></div>
+          <div className="box--narrow" style={{ marginTop: 'var(--s-4)' }}>
           <div className="btn-row">
             {f.surDevis
               ? <Link to={`/contact?type=devis&code=${f.code}`} className="btn btn--primary">Demander un devis pour {f.code}</Link>
@@ -56,6 +49,8 @@ export function FormationPage({ slug: slugProp }: { slug?: string }) {
             </button>
             <Link to="/catalogue-2027" className="btn btn--outline">Tout le catalogue</Link>
           </div>
+          </div>
+          <p className="muted" style={{ textAlign: 'center', marginTop: 'var(--s-3)' }}>Réf. {f.reference}</p>
         </div>
       </section>
     </>

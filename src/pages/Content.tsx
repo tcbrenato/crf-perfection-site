@@ -41,28 +41,33 @@ export function About() {
       <Seo path="/qui-sommes-nous" title="Qui sommes-nous" description="CRF Perfection, Centre de Recherche et de Formation : cabinet international de formation, de conseil stratégique et de recherche appliquée, basé aux États-Unis, avec des agences au Bénin, en Côte d'Ivoire, au Maroc et au Togo." jsonLd={[organisationJsonLd()]} />
       <PageHero id="ab-t" eyebrow="Qui sommes-nous" lead={EN_BREF[0].texte}>CRF Perfection en <span className="accent">bref</span></PageHero>
       <section className="section section--light">
-        <div className="container grid grid--3">
-          {EN_BREF.map((b) => <div key={b.titre} className="card"><h2 className="h3">{b.titre}</h2><p className="card__text">{b.texte}</p></div>)}
+        <div className="container">
+          <ul className="npanel-list box box--narrow">
+            {EN_BREF.map((b, i) => <li key={b.titre} className="npanel"><span className="npanel__icon" aria-hidden="true">{i + 1}</span><div><h2 className="npanel__title">{b.titre}</h2><p className="npanel__text">{b.texte}</p></div></li>)}
+          </ul>
         </div>
       </section>
       <section id="editorial" className="section section--white" aria-labelledby="ed-t">
-        <div className="container split split--top">
-          <div className="photo portrait"><Picture name="pdf-img-007" alt={`${EDITORIAL.signature}, ${EDITORIAL.fonction}`} sizes="(max-width: 900px) 90vw, 30vw" position="50% 25%" /></div>
-          <div className="prose">
+        <div className="container">
+          <div className="section-head">
             <span className="eyebrow">{EDITORIAL.surtitre}</span>
             <h2 id="ed-t" className="h2">{EDITORIAL.titre[0]}<span className="accent">{EDITORIAL.titre[1]}</span>{EDITORIAL.titre[2]}</h2>
-            <p><strong>{EDITORIAL.salutation}</strong></p>
-            {EDITORIAL.paragraphes.map((p) => <p key={p.slice(0, 20)}>{p}</p>)}
-            <div className="quote__sign"><strong>{EDITORIAL.signature}</strong><span>{EDITORIAL.fonction}</span></div>
+          </div>
+          <div className="box box--narrow">
+            <div className="edito">
+              <p><strong>{EDITORIAL.salutation}</strong></p>
+              {EDITORIAL.paragraphes.map((p) => <p key={p.slice(0, 20)}>{p}</p>)}
+              <div className="quote__sign"><strong>{EDITORIAL.signature}</strong><span>{EDITORIAL.fonction}</span></div>
+            </div>
           </div>
         </div>
       </section>
       <section className="section section--light" aria-labelledby="val-t">
         <div className="container">
           <div className="section-head"><span className="eyebrow">Nos valeurs</span><h2 id="val-t" className="h2">Ce qui guide notre <span className="accent">action</span></h2></div>
-          <ul className="grid grid--4" role="list">
+          <ul className="npanel-list box box--narrow" role="list">
             {[['Passion', 'Dévouement total à l’excellence'], ['Collaboration', 'Travail d’équipe et synergie'], ['Innovation', 'Créativité et amélioration continue'], ['Intégrité', 'Éthique et transparence']].map(([t, d]) => (
-              <li key={t} className="card"><h3 className="h3">{t}</h3><p className="card__text">{d}</p></li>
+              <li key={t} className="npanel"><span className="npanel__icon" aria-hidden="true">{t[0]}</span><div><h3 className="npanel__title">{t}</h3><p className="npanel__text">{d}</p></div></li>
             ))}
           </ul>
         </div>
@@ -80,15 +85,15 @@ export function Activites() {
       <PageHero id="ac-t" eyebrow="Structuration de nos activités" lead="Quatre rubriques pour le plan d’action 2027.">Quatre rubriques, un seul <span className="accent">positionnement</span></PageHero>
       {RUBRIQUES.map((r, i) => (
         <section key={r.num} className={`section ${i % 2 ? 'section--white' : 'section--light'}`} aria-labelledby={`r${r.num}`}>
-          <div className="container rubrique">
-            <span className="card__num" aria-hidden="true">{r.num}</span>
-            <div className="prose">
+          <div className="container">
+            <div className="box box--narrow"><div className="prose" style={{ maxWidth: 'none' }}>
+            <span className="code code--navy" aria-hidden="true" style={{ justifySelf: 'start' }}>Rubrique {r.num}</span>
               <h2 id={`r${r.num}`} className="h2">{r.titre}</h2>
               <p className="lead">{r.intitule}</p>
               <h3 className="fiche__h">Description</h3><p>{r.description}</p>
               <h3 className="fiche__h">Objectif stratégique</h3><p>{r.objectif}</p>
               <Link to={r.lien} className="link-arrow">En savoir plus <ArrowRight aria-hidden="true" /></Link>
-            </div>
+            </div></div>
           </div>
         </section>
       ))}
@@ -115,7 +120,7 @@ export function Diagnostic() {
             <p>Une collaboration étroite avec vos équipes, alliant une vision des tendances du secteur et une expertise opérationnelle pour des solutions concrètes et durables.</p>
             <Link to="/contact?type=devis" className="btn btn--primary">Demander un diagnostic</Link>
           </div>
-          <div className="photo"><Picture name="copaf26-jour2-030" alt="Atelier de travail lors de la COPAF 2026" sizes="(max-width: 900px) 90vw, 45vw" /></div>
+          <div className="photo"><Picture name="copaf26-jour3-immersion-244" alt="Lecture de la maquette du port de Casablanca lors de la COPAF 2026" sizes="(max-width: 900px) 90vw, 45vw" /></div>
         </div>
       </section>
       <section className="section section--white">
@@ -175,7 +180,7 @@ export function SurMesure() {
       <section className="section section--white" aria-labelledby="dm-t">
         <div className="container">
           <div className="section-head"><span className="eyebrow">Méthode</span><h2 id="dm-t" className="h2">Comment nous construisons un programme pour un <span className="accent">port</span></h2></div>
-          <ol className="steps">{DEMARCHE.map((d, n) => <li key={d.titre}><span className="steps__n">{n + 1}</span><strong>{d.titre}</strong><span>{d.texte}</span></li>)}</ol>
+          <ol className="npanel-list box box--narrow">{DEMARCHE.map((d, n) => <li key={d.titre} className="npanel"><span className="npanel__icon" aria-hidden="true">{n + 1}</span><div><strong className="npanel__title">{d.titre}</strong><p className="npanel__text">{d.texte}</p></div></li>)}</ol>
         </div>
       </section>
       <section className="section section--light">
@@ -188,7 +193,7 @@ export function SurMesure() {
           <h3 className="h3" style={{ marginTop: 'var(--s-6)' }}>Projets publics concernés</h3>
           <div className="table-wrap"><table className="table">
             <thead><tr><th scope="col">Projet public cité</th><th scope="col">Pays</th><th scope="col">Programmes</th></tr></thead>
-            <tbody>{PROJETS_PUBLICS.map((p) => <tr key={p.projet}><td>{p.projet}</td><td>{p.pays}</td><td>{p.codes.join(', ')}</td></tr>)}</tbody>
+            <tbody>{PROJETS_PUBLICS.map((p) => <tr key={p.projet}><td>{p.projet}</td><td>{p.pays}</td><td><span className="pills">{p.codes.map((c) => <span key={c} className="code code--navy">{c}</span>)}</span></td></tr>)}</tbody>
           </table></div>
         </div>
       </section>
@@ -224,7 +229,7 @@ export function Copaf() {
       </section>
       <section className="section section--white">
         <div className="container gallery">
-          {[['copaf26-jour1-003', 'Photo de groupe, jour 1'], ['copaf26-jour1-087', 'Séance plénière'], ['copaf26-jour2-003', 'Chevalets des délégations'], ['copaf26-jour3-immersion-244', 'Visite de la maquette du port'], ['copaf26-jour3-immersion-097', 'Le port de Casablanca vu de la tour'], ['copaf26-jour3-immersion-284', 'Remise des attestations']].map(([n, a]) => (
+          {[['copaf26-jour1-003', 'Photo de groupe, jour 1'], ['copaf26-jour3-immersion-095', 'Le port de Casablanca'], ['copaf26-jour2-003', 'Chevalets des délégations'], ['copaf26-jour3-immersion-244', 'Visite de la maquette du port'], ['copaf26-jour3-immersion-097', 'Le port de Casablanca vu de la tour'], ['copaf26-jour3-immersion-222', 'Présentation de la maquette du port']].map(([n, a]) => (
             <figure key={n} className="photo"><Picture name={n} alt={`COPAF 2026 : ${a}`} sizes="(max-width: 700px) 90vw, 30vw" /></figure>
           ))}
         </div>

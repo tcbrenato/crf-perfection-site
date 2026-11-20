@@ -124,12 +124,12 @@ export function Catalogue() {
                 <span className="eyebrow">Contexte</span>
                 <h2 id="enjeux-titre" className="h2">Enjeux 2027 pour les <span className="accent">ports africains</span></h2>
               </div>
-              <ul className="grid grid--3" role="list">
-                {ENJEUX_2027.map((e) => (
-                  <li key={e.titre} className="card">
-                    <h3 className="h3">{e.titre}</h3>
-                    <p className="card__text">{e.texte}</p>
-                    <p className="card__foot codes">{e.codes.map((c) => <a key={c} href={`#${c.toLowerCase()}`} className="badge badge--outline">{c}</a>)}</p>
+              <ul className="npanel-list box box--narrow" role="list">
+                {ENJEUX_2027.map((e, i) => (
+                  <li key={e.titre} className="npanel">
+                    <span className="npanel__icon" aria-hidden="true">{i + 1}</span>
+                    <div><h3 className="npanel__title">{e.titre}</h3><p className="npanel__text">{e.texte}</p></div>
+                    <p className="npanel__aside">{e.codes.map((c) => <a key={c} href={`#${c.toLowerCase()}`} className="code">{c}</a>)}</p>
                   </li>
                 ))}
               </ul>
@@ -159,12 +159,12 @@ export function Catalogue() {
                         <table className="table">
                           <thead><tr><th scope="col">Projet public cité</th><th scope="col">Pays</th><th scope="col">Programmes</th></tr></thead>
                           <tbody>{PROJETS_PUBLICS.map((p) => (
-                            <tr key={p.projet}><td>{p.projet}</td><td>{p.pays}</td><td>{p.codes.join(', ')}</td></tr>
+                            <tr key={p.projet}><td>{p.projet}</td><td>{p.pays}</td><td><span className="pills">{p.codes.map((c) => <span key={c} className="code code--navy">{c}</span>)}</span></td></tr>
                           ))}</tbody>
                         </table>
                       </div>
                       <h3 className="h3">Comment nous construisons un programme pour un port</h3>
-                      <ol className="steps">{DEMARCHE.map((d, n) => <li key={d.titre}><span className="steps__n">{n + 1}</span><strong>{d.titre}</strong><span>{d.texte}</span></li>)}</ol>
+                      <ol className="npanel-list" style={{ width: '100%' }}>{DEMARCHE.map((d, n) => <li key={d.titre} className="npanel"><span className="npanel__icon" aria-hidden="true">{n + 1}</span><div><strong className="npanel__title">{d.titre}</strong><p className="npanel__text">{d.texte}</p></div></li>)}</ol>
                       <Link to="/contact?type=devis" className="btn btn--primary">Demander un devis <ArrowRight aria-hidden="true" /></Link>
                     </div>
                   )}

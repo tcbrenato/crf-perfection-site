@@ -1,4 +1,5 @@
 import { useId, useState } from 'react';
+import { Clock, MapPin, CalendarDays, Wallet } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { ChevronDown, Plus, Check, ArrowRight } from 'lucide-react';
 import { formatSession, type Formation } from '@content/catalogue';
@@ -22,6 +23,12 @@ export function FormationCard({ f, selected, onToggle }: { f: Formation; selecte
         <span className="fcard__cible">{f.cible}</span>
       </div>
       <h3 className="fcard__title" id={`${id}-t`}>{f.intitule}</h3>
+      <ul className="pills" aria-label="Informations clés">
+        <li><Clock aria-hidden="true" />{f.duree}</li>
+        <li><MapPin aria-hidden="true" />{lieuFormation(f)}</li>
+        <li><CalendarDays aria-hidden="true" />{periodeFormation(f)}</li>
+        <li><Wallet aria-hidden="true" />{coutFormation(f)}</li>
+      </ul>
       <dl className="facts facts--4">
         <div><dt>Durée</dt><dd>{f.duree}</dd></div>
         <div><dt>Lieu</dt><dd>{lieuFormation(f)}</dd></div>
@@ -52,33 +59,32 @@ export function FormationCard({ f, selected, onToggle }: { f: Formation; selecte
   );
 }
 
-/** Contenu complet d'une fiche (textes du Word). */
+/** Contenu complet d'une fiche (textes du Word), présenté en panneaux bleu nuit comme le catalogue PDF. */
 export function FicheDetail({ f }: { f: Formation }) {
-  const blocs: [string, string | undefined | null][] = [
+  const blocs: [string, React.ReactNode | undefined | null][] = [
+    ['Objectif', f.objectif],
     ['Problématique & enjeux', f.problematique],
     ['Prolonge la COPAF 2026', f.prolonge],
     ['Ports concernés (projets publics)', f.portsConcernes],
     ['Compétences visées', f.competences],
     ['Différence avec T2', f.differenceT2],
     ['Précision', f.note],
+    ['Contenu', f.contenu.length ? <ul>{f.contenu.map((c) => <li key={c}>{c}</li>)}</ul> : null],
+    ['Livrable', f.livrable],
   ];
+  const meta = ([['Format', f.format], ['Public', f.public], ['Prérequis', f.prerequis], ['Hébergement', f.hebergement ?? (f.famille === 'C' ? 'Sur demande' : null)]] as const).filter(([, v]) => v);
   return (
-    <div className="fiche">
-      <div className="fiche__col">
-        {blocs.filter(([, v]) => v).map(([t, v]) => (
-          <section key={t}><h4 className="fiche__h">{t}</h4><p>{v}</p></section>
-        ))}
-        {f.contenu.length > 0 && (
-          <section>
-            <h4 className="fiche__h">Contenu</h4>
-            <ul className="fiche__list">{f.contenu.map((c) => <li key={c}>{c}</li>)}</ul>
-          </section>
-        )}
-      </div>
-      <dl className="fiche__meta">
-        {([['Format', f.format], ['Public', f.public], ['Prérequis', f.prerequis], ['Livrable', f.livrable], ['Hébergement', f.hebergement ?? (f.famille === 'C' ? 'Sur demande' : null)]] as const)
-          .filter(([, v]) => v).map(([t, v]) => <div key={t}><dt>{t}</dt><dd>{v}</dd></div>)}
-      </dl>
-    </div>
+    <ul className="npanel-list">
+      {blocs.filter(([, v]) => v).map(([t, v], i) => (
+        <li key={t} className="npanel">
+          <span className="npanel__icon" aria-hidden="true">{i + 1}</span>
+          <div><h4 className="npanel__title">{t}</h4><div className="npanel__text">{v}</div></div>
+        </li>
+      ))}
+      <li className="npanel npanel--meta">
+        <span className="npanel__icon" aria-hidden="true">i</span>
+        <dl className="meta-grid">{meta.map(([t, v]) => <div key={t}><dt>{t}</dt><dd>{v}</dd></div>)}</dl>
+      </li>
+    </ul>
   );
 }
