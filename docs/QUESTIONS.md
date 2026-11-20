@@ -1,6 +1,24 @@
 # QUESTIONS : éléments manquants, contradictoires ou périmés
 
-Statut : étape 0, mise à jour après les captures Accueil, À propos (×2), Contact et menus.
+Statut : étape 1 (système de design + accueil). Mise à jour après réception du Word, du PDF du catalogue, des logos et des 4 albums photo COPAF 2026.
+
+## 0. Réglé par les fichiers reçus
+- Catalogue Word + PDF reçus : 22 fiches extraites automatiquement (`scripts/extract-catalogue.py` → `content/catalogue/formations.raw.json`), sans réécriture.
+- Coordonnées retenues (source : PDF du catalogue 2027) : +229 01 69 30 30 19 · +1 (240) 978-4155 · contact@crfperfection.pro · contact@copaf-ports.com · crfperfection.pro.
+- Agences : Bénin, Côte d'Ivoire, Maroc, Togo (Word + PDF) ; siège aux États-Unis. Adresse postale non affichée tant que la bonne n'est pas confirmée (question 9).
+- DG : « Dr William Odah, Directeur Général » (graphie du PDF) ; éditorial 2027 repris du PDF.
+- Logos : seules versions disponibles (matricielles). Fond supprimé sans retouche du dessin (`public/logos/`). Bruit visible si le logo couleur est posé sur fond sombre : on ne l'utilise que sur fond clair, et le blanc sur fond sombre.
+- Banque d'images : 4 albums COPAF 2026 (936 photos) + photos du PDF. 41 photos retenues (`images/source/`).
+- Chiffres, certifications ISO/QUALIOPI et témoignages de l'ancien site : non repris (aucune preuve fournie).
+
+## 0 bis. Nouveaux points (étape 1)
+- **Contraste de la charte** : le rouge vif #C8202F sur bleu nuit #1B2A41 donne 2,55:1, sous le minimum WCAG AA (3:1 pour les grands titres, 4,5:1 pour le texte). Choix appliqué : mot accentué des titres en rouge vif (comme exigé) ; mini-étiquettes en pastille rouge vif avec texte blanc (5,67:1, conforme, comme la couverture du PDF). Lighthouse signalera les mots accentués. À trancher : garder (exception assumée) ou éclaircir uniquement la teinte de ces mots.
+- **Bandeau « Recherche appliquée »** de l'accueil : aucun texte source dans le Word (les 4 rubriques n'incluent pas la recherche). Texte provisoire : « Études au service des décisions des autorités portuaires. » À valider ou remplacer.
+- **Droit à l'image** : les photos COPAF montrent des personnes identifiables. Confirmer que leur usage sur le site est couvert (accord des participants / mention).
+- **Catalogue « 2027 - 2028 »** sur la couverture du PDF vs « 2027 » dans le Word et le brief.
+- **Webinaires W1/W2** : le Word ne donne ni objectif ni contenu détaillé (seulement public, date, coût). Les fiches W resteront courtes sauf texte fourni.
+- **Codes C1/C3 et C2/C8** : sessions parallèles à Dar es Salaam (18–19 et 20–22 oct.) ; C4/C6 en parallèle à Mombasa (27–29 sept.) — déjà signalé.
+
 **[BLOQUANT]** = nécessaire avant l'étape 1 ou 2.
 
 ## A. Fichiers et environnement

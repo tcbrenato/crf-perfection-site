@@ -1,0 +1,82 @@
+/*
+ * Design tokens CRF Perfection. Charte validée : 5 couleurs + nuances du bleu nuit.
+ * Aucune couleur en dur ailleurs dans le code : tout passe par ces variables.
+ */
+:root {
+  /* — Couleurs de la charte — */
+  --c-bordeaux: #96111c;
+  --c-navy: #1b2a41;
+  --c-red: #c8202f;          /* uniquement : mots accentués sur fond bleu nuit */
+  --c-white: #ffffff;
+  --c-light: #f5f6f8;
+
+  /* — Nuances du bleu nuit (dégradés, textes secondaires, bordures) — */
+  --c-navy-950: #0f1928;
+  --c-navy-900: #131f31;
+  --c-navy-800: #22334e;
+  --c-navy-700: #2c3e5c;
+  --c-navy-600: #4a5870;     /* texte secondaire sur clair : 7,2:1 sur blanc */
+  --c-navy-300: #a9b2c1;     /* texte secondaire sur sombre : 7,9:1 sur bleu nuit */
+  --c-navy-200: #cdd3dd;
+  --c-navy-100: #e4e7ec;     /* bordures sur clair */
+  --c-navy-line: rgba(122, 150, 196, 0.16); /* lignes diagonales bleutées */
+  --c-navy-veil: rgba(27, 42, 65, 0.92);
+
+  /* Bordeaux plus vif pour la fin du dégradé des bandeaux (nuance de la teinte bordeaux) */
+  --c-bordeaux-vif: #b0141f;
+
+  /* — Rôles — */
+  --bg-page: var(--c-white);
+  --bg-light: var(--c-light);
+  --bg-dark: var(--c-navy);
+  --text: var(--c-navy);
+  --text-muted: var(--c-navy-600);
+  --text-on-dark: var(--c-white);
+  --text-on-dark-muted: var(--c-navy-300);
+  --accent-on-light: var(--c-bordeaux);
+  --accent-on-dark: var(--c-red);
+  --border: var(--c-navy-100);
+  --border-on-dark: rgba(169, 178, 193, 0.22);
+  --focus: var(--c-bordeaux);
+  --focus-on-dark: var(--c-white);
+
+  --grad-dark: linear-gradient(160deg, var(--c-navy) 0%, var(--c-navy-900) 100%);
+  --grad-bandeau: linear-gradient(100deg, var(--c-bordeaux) 0%, var(--c-bordeaux-vif) 100%);
+  --grad-photo-fade: linear-gradient(90deg, var(--c-navy) 0%, var(--c-navy) 34%, rgba(27, 42, 65, 0.86) 52%, rgba(27, 42, 65, 0.25) 100%);
+  --grad-photo-fade-mobile: linear-gradient(180deg, rgba(27, 42, 65, 0.55) 0%, var(--c-navy) 70%);
+
+  /* — Typographie : Inter uniquement — */
+  --font: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --fs-xs: 0.8125rem;   /* 13 */
+  --fs-sm: 0.9375rem;   /* 15 */
+  --fs-base: 1.0625rem; /* 17 */
+  --fs-lg: 1.25rem;     /* 20 */
+  --fs-xl: clamp(1.375rem, 1.1rem + 0.9vw, 1.75rem);
+  --fs-2xl: clamp(1.75rem, 1.3rem + 1.8vw, 2.625rem);
+  --fs-3xl: clamp(2.25rem, 1.5rem + 3.2vw, 4rem);
+  --lh: 1.6;
+  --lh-tight: 1.12;
+  --tracking-eyebrow: 0.16em;
+  --measure: 68ch;
+
+  /* — Espacements (8 px) — */
+  --s-1: 0.5rem;
+  --s-2: 1rem;    /* 16 px : écart minimal entre deux éléments */
+  --s-3: 1.5rem;
+  --s-4: 2rem;
+  --s-5: 2.5rem;
+  --s-6: 3rem;
+  --s-8: 4rem;
+  --section-y: clamp(6rem, 4.5rem + 4vw, 8rem); /* 96 → 128 px */
+  --gutter: clamp(1rem, 0.5rem + 2.4vw, 2.5rem);
+  --container: 75rem;
+
+  /* — Formes — */
+  --radius: 14px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+  --shadow-sm: 0 1px 2px rgba(19, 31, 49, 0.06), 0 4px 16px rgba(19, 31, 49, 0.05);
+
+  --header-h: 76px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
