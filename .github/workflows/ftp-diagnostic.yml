@@ -1,0 +1,24 @@
+name: Diagnostic FTP (lecture seule)
+on:
+  workflow_dispatch:
+jobs:
+  lister:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+      - name: Lister les dossiers vus par le compte FTP
+        env:
+          H: ${{ secrets.FTP_SERVER }}
+          U: ${{ secrets.FTP_USERNAME }}
+          P: ${{ secrets.FTP_PASSWORD }}
+        run: |
+          lftp -u "$U","$P" "$H" -e "set ftp:ssl-allow no; set net:max-retries 2; set net:timeout 30;
+            echo '== pwd =='; pwd;
+            echo '== racine =='; cls -la;
+            echo '== domains =='; cls -la domains;
+            echo '== domains/crfperfection.pro =='; cls -la domains/crfperfection.pro;
+            echo '== domains/crfperfection.pro/public_html =='; cls -la domains/crfperfection.pro/public_html;
+            echo '== public_html (tete) =='; cls -la public_html;
+            echo '== public_html/domains =='; cls -la public_html/domains;
+            echo '== chemin absolu =='; cls -la /home/*/domains/crfperfection.pro/public_html;
+            bye" || true
