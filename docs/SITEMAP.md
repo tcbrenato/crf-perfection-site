@@ -1,62 +1,78 @@
 # SITEMAP : audit de l'ancien site et proposition du nouveau site
 
-## 1. Ancien site (d'après les 5 captures reçues)
+## 1. Ancien site (9 captures + 3 captures de menus)
 
-| # | Ancienne URL | Titre H1 | Sections | Formulaires / boutons | Liens externes |
-|---|---|---|---|---|---|
-| 1 | `/professional-training-services` | Formations Professionnelles | Hero + éditorial Dr Oloutayo William Odah + 4 chiffres · 4 pôles · Hybridation des compétences · Pourquoi nous (4) · COPAF + Business Thérapie · Public cible (4) · Appel à l'action (3 cartes) · bloc coordonnées | Demander un Devis · Télécharger le Catalogue · Prendre rendez-vous · Demander un devis · Commencer Ma Formation | – |
-| 2 | `/strategic-consulting-services` | Conseils Stratégiques | Hero + 4 chiffres · 4 domaines d'intervention · Pourquoi nous (4) · Notre Approche + Ce Que Nous Offrons · Appel à l'action (3 cartes) | Diagnostic Gratuit · Nos Services · Demander un diagnostic · Voir les études de cas · Demander une proposition · Démarrer Mon Projet Stratégique | – |
-| 3 | `/conference-organization-services` | Organisation de Conférences | Hero COPAF 2026 + 4 chiffres · 4 offres événementielles · 4 piliers · Accompagnement 360° + Garantie d'Excellence · Appel à l'action (3 cartes) | Inscription COPAF 2026 · Devenir Sponsor · S'inscrire maintenant · Devenir sponsor · Prendre contact · Participer à la COPAF 2026 | (copaf-ports.com absent des captures) |
-| 4 | `/research-studies-services` | Études et Recherches | Hero + 4 chiffres · 4 services de recherche · Pourquoi nous (4) · Méthodologie (2 étapes visibles sur 4) + Études à impact · Appel à l'action (3 cartes) | Demander une Étude · Découvrir nos Services · Prendre rendez-vous · Voir nos études · Demander un devis · Lancer Mon Étude | – |
-| 5 | `/training-development-hub` | Formation & Développement | Hero + éditorial court + 4 chiffres · 4 modules · Pourquoi nous (4) · Appel à l'action bordeaux | Demander un Devis · Explorer les Programmes · Télécharger le Catalogue | – |
+### Menu de l'ancien site
+- **Accueil**
+- **Nos Services ▾** : Formations Professionnelles · Conseil Stratégique · Organisation de Conférences · Études & Recherche
+- **Domaines d'Expertise ▾** : Formation & Développement · Marketing Digital · Intelligence Artificielle (IA) · Management de Projets Numériques · Management des Ressources Humaines · Business Thérapie
+- **À Propos ▾** : Notre Histoire, Vision & Équipe · Blog, Certifications & Partenaires
+- **Contact** · **Recherche** (loupe)
 
-**Menu** : Accueil · Nos Services ▾ · Domaines d'Expertise ▾ · À Propos ▾ · Contact · Recherche.
-**Pied de page** : présentation · contact · 4 services · LinkedIn / Twitter / Facebook · Politique de Confidentialité · Conditions d'Utilisation · bouton flottant vert.
-**Pages citées mais non capturées** : Accueil, sous-pages « Domaines d'Expertise » et « À Propos », Contact, Recherche, Politique de Confidentialité, Conditions d'Utilisation (URL inconnues).
-**Actualités / Publications** : aucune trace dans le menu ni dans le pied de page. **Pas de page Actualités** sauf indication contraire.
-**Observation** : les pages 1 et 5 se recoupent (deux pages « formation » avec des chiffres différents) ; elles fusionnent dans le Catalogue 2027.
+### Pages capturées
+
+| # | Ancienne URL | H1 | Sections principales | Formulaires / boutons |
+|---|---|---|---|---|
+| 1 | `/` | Forger les Leaders de demain | Hero (texte animé) · 4 chiffres « audités 2024 » · 8 onglets de domaines · accompagnement sur mesure · 3 domaines d'intervention (image « Strategic Partners Inc. ») · consultation gratuite · 6 témoignages nominatifs · 4 atouts · appel à l'action | Télécharger le catalogue · Démarrer un projet · En savoir plus · Demander un devis · Contactez-nous · Demander une consultation gratuite · Inscrire mon organisation · Parler à un expert |
+| 2 | `/about/company-overview` | Qui Sommes-Nous ? | Histoire · mission · frise 2006–2024 · 4 chiffres · vision · 4 piliers · Vision 2030 · équipe (2 personnes) · 4 valeurs · appel à l'action | Notre Histoire / Vision / Équipe (ancres) · Contactez-Nous |
+| 3 | `/about/resources` | Blog, Certifications & Partenaires | 3 blocs « Explorer » (blog, certifications, partenaires) sans contenu visible · 4 atouts · appel à l'action | Explorer ×3 · Lire le Blog · Nous Contacter |
+| 4 | `/contact` | Parlons de Votre Projet | 4 chiffres · 4 canaux · **formulaire** (nom, email, téléphone, entreprise, service, message) · temps de réponse · horaires · accréditations · carte Google Maps · appel à l'action | Envoyer le message · Appelez-nous · WhatsApp |
+| 5 | `/professional-training-services` | Formations Professionnelles | Éditorial du Dr Oloutayo William Odah · 4 pôles · hybridation · atouts · COPAF + Business Thérapie · public cible · appel à l'action | Demander un Devis · Télécharger le Catalogue · Commencer Ma Formation |
+| 6 | `/strategic-consulting-services` | Conseils Stratégiques | 4 domaines · atouts · approche · appel à l'action | Diagnostic Gratuit · Démarrer Mon Projet Stratégique |
+| 7 | `/conference-organization-services` | Organisation de Conférences | COPAF 2026 · offres · 4 piliers · accompagnement 360° · appel à l'action | Inscription COPAF 2026 · Devenir Sponsor |
+| 8 | `/research-studies-services` | Études et Recherches | 4 services · atouts · méthodologie · études de cas · appel à l'action | Demander une Étude · Lancer Mon Étude |
+| 9 | `/training-development-hub` | Formation & Développement | 4 modules · atouts · appel à l'action | Demander un Devis · Télécharger le Catalogue |
+
+**Non capturées** : 5 sous-pages « Domaines d'Expertise » (Marketing Digital, IA, Management de Projets Numériques, Management des RH, Business Thérapie), Recherche, Politique de Confidentialité, Conditions d'Utilisation. Leurs URL sont inconnues.
+**Liens externes** : Google Maps, WhatsApp, LinkedIn, Twitter, Facebook (URL inconnues). copaf-ports.com n'apparaît nulle part.
+**Blog** : il figure dans le menu, mais aucun article n'est visible. **Pas de page Actualités**, sauf si des articles existent réellement (voir QUESTIONS).
 
 ## 2. Nouveau site proposé
 
 ### Menu (5 entrées + bouton)
-`Qui sommes-nous` · `Nos activités ▾` · `Catalogue 2027` · `COPAF` · `Contact` · **[Parlons de votre projet]** · sélecteur FR | EN
-(le logo ramène à l'accueil ; le menu « Nos activités » ouvre : Diagnostic & conseil · Formations sur mesure · Recherche appliquée)
+`Qui sommes-nous` · `Nos activités ▾` · `Catalogue 2027` · `COPAF` · `Contact` · **[Parlons de votre projet]** · FR | EN
+« Nos activités ▾ » ouvre : Diagnostic & conseil · Formations sur mesure · Recherche appliquée. Le logo ramène à l'accueil.
+
+Les 4 « services » et les 6 « domaines d'expertise » de l'ancien site (deux menus qui se recoupent) sont regroupés en **4 rubriques** et un **catalogue** filtrable. Les domaines (IA, management de projets numériques, RH, marketing) deviennent des **filtres et des cibles du catalogue** (T1 à T5) au lieu de pages séparées.
 
 ### Arborescence
 
 | Page | URL FR | URL EN | Origine du contenu |
 |---|---|---|---|
-| Accueil | `/` | `/en/` | Brief + chiffres absents (aucun chiffre non sourcé) |
-| Qui sommes-nous | `/qui-sommes-nous` | `/en/about` | Pied de page + Word ; capture « À Propos » attendue |
-| Nos activités (4 rubriques) | `/nos-activites` | `/en/what-we-do` | Word (4 rubriques) |
-| Diagnostic & conseil | `/nos-activites/diagnostic-conseil` | `/en/what-we-do/advisory` | Ancienne page 2 |
-| Recherche appliquée | `/nos-activites/recherche-appliquee` | `/en/what-we-do/applied-research` | Ancienne page 4 |
-| Formations sur mesure (in-house) | `/formations-sur-mesure` | `/en/in-house-training` | Word (B1–B6, démarche en 5 étapes, projets publics) |
-| **Catalogue 2027** | `/catalogue-2027` | `/en/catalogue-2027` | Word (22 formations) + anciennes pages 1 et 5 |
-| Fiche formation (×22) | `/formations/t2-cyber-resilience-portuaire`, etc. | `/en/courses/…` (TODO-EN) | Word |
-| COPAF | `/copaf` | `/en/copaf` | Brief + ancienne page 3 (chiffres non confirmés retirés) |
+| Accueil | `/` | `/en/` | Brief + Word ; aucun chiffre ni témoignage non sourcé |
+| Qui sommes-nous | `/qui-sommes-nous` | `/en/about` | Ancienne page 2 (mission, valeurs, équipe à confirmer) + Word |
+| Nos activités (4 rubriques) | `/nos-activites` | `/en/what-we-do` | Word |
+| ↳ Diagnostic & conseil | `/nos-activites/diagnostic-conseil` | `/en/what-we-do/advisory` | Ancienne page 6 |
+| ↳ Recherche appliquée | `/nos-activites/recherche-appliquee` | `/en/what-we-do/applied-research` | Ancienne page 8 |
+| Formations sur mesure (B1–B6) | `/formations-sur-mesure` | `/en/in-house-training` | Word |
+| **Catalogue 2027** | `/catalogue-2027` | `/en/catalogue-2027` | Word (22 formations) ; remplace les anciennes pages 5 et 9 et les 6 domaines |
+| Fiches formation (×22) | `/formations/t2-cyber-resilience-portuaire`, etc. | `/en/courses/…` | Word |
+| COPAF | `/copaf` | `/en/copaf` | Brief + ancienne page 7 |
 | Inscription | `/inscription` | `/en/registration` | Brief |
-| Contact / devis | `/contact` | `/en/contact` | Brief + pied de page |
-| Mentions légales | `/mentions-legales` | `/en/legal-notice` | À fournir (modèle marqué) |
-| Confidentialité | `/confidentialite` | `/en/privacy` | Ancienne page « Politique de Confidentialité » (à capturer) |
-| Conditions d'inscription | `/conditions-inscription` | `/en/registration-terms` | **À fournir** (requis par le formulaire) |
-| Admin (noindex, Supabase Auth) | `/admin` | – | Nouveau |
+| Contact / devis | `/contact` | `/en/contact` | Ancienne page 4 (canaux, horaires) + brief |
+| Mentions légales | `/mentions-legales` | `/en/legal-notice` | Modèle « à compléter par CRF Perfection » |
+| Confidentialité | `/confidentialite` | `/en/privacy` | À fournir (ancienne page non capturée) |
+| Conditions d'inscription | `/conditions-inscription` | `/en/registration-terms` | À fournir |
+| Admin (noindex) | `/admin` | – | Nouveau |
 | 404 | `*` | `*` | Nouveau |
 
-Pied de page : logo blanc, « Former. Conseiller. Faire rayonner. », coordonnées, plan du site, réseaux sociaux (URL à fournir), liens légaux.
-
-### Redirections 301 prévues (détail dans `docs/REDIRECTIONS.md` à l'étape 4)
+### Redirections 301 (détail final dans `docs/REDIRECTIONS.md`)
 | Ancienne | Nouvelle |
 |---|---|
+| `/about/company-overview` | `/qui-sommes-nous` |
+| `/about/resources` | `/qui-sommes-nous` |
+| `/contact` | `/contact` (inchangée) |
 | `/professional-training-services` | `/catalogue-2027` |
 | `/training-development-hub` | `/catalogue-2027` |
 | `/strategic-consulting-services` | `/nos-activites/diagnostic-conseil` |
 | `/research-studies-services` | `/nos-activites/recherche-appliquee` |
 | `/conference-organization-services` | `/copaf` |
-| autres anciennes URL | à compléter quand les captures manquantes arriveront |
+| 5 sous-pages « Domaines d'Expertise » | `/catalogue-2027` (URL exactes à relever sur le site en ligne) |
+| Politique de confidentialité, Conditions d'utilisation | `/confidentialite`, `/conditions-inscription` (URL à relever) |
 
-### Ce qui disparaît de l'ancien site (proposition)
-- Tous les chiffres non sourcés (500+, 1000+, 95 %, 98 %, 200+, +150 % ROI, 25+ pays, 15K+, « ISO Qualité Certifiée », études de cas chiffrées) : règle « rien d'inventé ». Ils reviennent seulement si CRF Perfection en fournit la preuve.
-- « Diagnostic Gratuit », « Consultation Gratuite » : engagement commercial à confirmer.
-- Programme « Business Thérapie », pôles RH / marketing génériques : absents du catalogue 2027. À garder ou non (voir QUESTIONS).
-- Fonction « Recherche » de l'en-tête : remplacée par la recherche du catalogue (code ou mot-clé).
+### Ce qui ne sera pas repris sans preuve écrite
+- **Chiffres** : 850+ / 1000+ / 5000+ / 500+ formés, 45+ programmes, 12 M€, 15 ans / 18+ ans / 5+ ans, 98 % / 95 %, 200+ entreprises, 150+ missions, 50+ experts, 20+ / 25+ pays, temps de réponse « garantis » 2 h / 24 h / 48 h, support 24/7.
+- **Certifications** : ISO 9001, QUALIOPI, « Méthodologie Certifiée ISO ».
+- **Témoignages** : les 6 témoignages nominatifs de l'accueil.
+- **Visuels tiers** : l'image « Strategic Partners Inc. » et les photos de banque d'images de la page Ressources.
+- **Offres gratuites** : « Diagnostic Gratuit » et « Consultation Gratuite », sauf confirmation.

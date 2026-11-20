@@ -1,55 +1,65 @@
 # QUESTIONS : éléments manquants, contradictoires ou périmés
 
-Statut : étape 0. Les questions bloquantes sont marquées **[BLOQUANT]**.
+Statut : étape 0, mise à jour après les captures Accueil, À propos (×2), Contact et menus.
+**[BLOQUANT]** = nécessaire avant l'étape 1 ou 2.
 
 ## A. Fichiers et environnement
-1. **[BLOQUANT] Dépôt** : le seul dépôt de cette session est `tcbrenato/portfolio`, le portfolio personnel de Rénato TCHOBO, qui se déploie sur Hostinger (`/public_html/`) à chaque push sur `main`. Le site CRF ne doit pas l'écraser. Merci de créer un dépôt dédié (ex. `crf-perfection-site`) et de me le donner, ou de confirmer explicitement l'usage de ce dépôt-ci.
-2. **[BLOQUANT] Catalogue Word** `CRF_Perfection_Catalogue_Formation_2027_Finalisé.docx` : non reçu. C'est la source unique des 22 formations.
-3. **[BLOQUANT] Banque `/images/`** : non reçue. Les 4 images reçues sont les logos.
-4. **PDF du catalogue 2027** (bouton « Télécharger le PDF ») : non reçu.
-5. **Les 2 affiches de référence de la charte** : non reçues (facultatif, mais utile pour les lignes diagonales et les bandeaux).
-6. **Captures manquantes** : Accueil, sous-pages « Domaines d'Expertise » et « À Propos », Contact, Recherche, Politique de Confidentialité, Conditions d'Utilisation, et le contenu des 3 menus déroulants.
-7. **Logos** : reçus en image matricielle sans transparence (fond blanc, ou fond bleu `#182A40` pour la version blanche, légèrement différent de `#1B2A41`), à 560–600 px de large au maximum. Il faut des versions **SVG** (ou PNG transparent ≥ 2 000 px) : logo complet couleur, logo complet blanc, symbole seul (favicon). Sans elles, le logo sera flou sur écran Retina et formera un rectangle visible sur les fonds en dégradé. Je ne le redessinerai pas.
+1. **Dossier de travail** : le projet est dans un dossier séparé `/home/user/crf-perfection`, avec son propre historique git. Le portfolio n'est pas modifié. Pour publier, il faudra un dépôt GitHub dédié (ex. `crf-perfection-site`) que vous créez et me donnez : je ne peux pas en créer un moi-même.
+2. **[BLOQUANT étape 2] Catalogue Word** `CRF_Perfection_Catalogue_Formation_2027_Finalisé.docx` : pas encore reçu. C'est la source unique des 22 formations.
+3. **[BLOQUANT étape 1] Banque `/images/`** : pas encore reçue (ports, conteneurs, salles de formation, dirigeants). Les images reçues sont les logos et les captures des menus.
+4. **PDF du catalogue 2027** (bouton « Télécharger le PDF ») : pas encore reçu.
+5. **Les 2 affiches de référence de la charte** : pas encore reçues (facultatif, mais utile pour les lignes diagonales et les bandeaux).
+6. **Captures restantes** (facultatif) : les 5 sous-pages « Domaines d'Expertise » (Marketing Digital, IA, Management de Projets Numériques, Management des RH, Business Thérapie), la Politique de Confidentialité et les Conditions d'Utilisation. Utiles pour relever leurs URL (redirections 301) et le texte légal existant.
+7. **Logos** : reçus en image matricielle sans transparence, à 600 px de large au maximum. La version blanche est posée sur un bleu `#182A40` légèrement différent de `#1B2A41`. Il faut des versions **SVG** (ou PNG transparent ≥ 2 000 px) : logo complet couleur, logo complet blanc, symbole seul. Je ne redessine pas le logo.
 
-## B. Coordonnées (contradictions)
-8. **Téléphone** : ancien site `+1 (240) 978-4155` (aussi WhatsApp) ; brief `+229 01 69 30 30 19`. On affiche les deux ? Seulement le béninois ? Le WhatsApp reste-t-il américain ?
-9. **Adresse** : deux adresses américaines différentes sur l'ancien site : « 1901 Pennsylvania Avenue NW, Washington D.C. 20006 » (page Formations) et « 10411 Greenbelt road Uperoom, MD, 20706 » (pied de page ; « Uperoom » est sans doute une coquille de « Upper Room » ou d'un numéro de suite). Laquelle est valable ? Y a-t-il des adresses pour les agences africaines ?
-10. **Pays des agences** : ancien site « Bénin, Côte d'Ivoire, Togo » ; Word (d'après le brief) « Bénin, Côte d'Ivoire, Maroc, Togo ». Le Maroc est-il une agence ?
-11. **Réseaux sociaux** : URL LinkedIn, Twitter/X, Facebook à fournir. Le bouton flottant vert (WhatsApp ?) est-il à conserver ?
+## B. Identité et coordonnées (contradictions)
+8. **Téléphone** : `+1 (240) 978-4155` (téléphone et WhatsApp) sur tout l'ancien site ; `+229 01 69 30 30 19` dans le brief. Que faut-il afficher ? Le WhatsApp reste-t-il le numéro américain ?
+9. **Adresse** : deux adresses américaines. « 1901 Pennsylvania Avenue NW, Washington D.C. 20006 » (page Contact, « siège social ») et « 10411 Greenbelt road Uperoom, MD, 20706 » (pied de page ; « Uperoom » semble être une coquille). Laquelle afficher ? Y a-t-il des adresses pour les agences africaines ? La carte Google Maps doit-elle rester ?
+10. **Pays des agences** : ancien site « Bénin, Côte d'Ivoire, Togo » ; Word (d'après le brief) « Bénin, Côte d'Ivoire, Maroc, Togo ».
+11. **Horaires** : « Lun–Ven 8h00–19h00, Sam 9h00–14h00, Dim fermé ». Ces horaires sont-ils toujours valables, et dans quel fuseau horaire (Washington ou Cotonou) ?
+12. **Nom du DG** : « Dr Oloutayo William Odah » (éditorial) et « Dr. William Odah, Directeur Général » (page Équipe). Quelle graphie utiliser ?
+13. **Équipe** : l'ancien site présente le Dr William Odah et Alida Ayena (Assistante de Direction). Faut-il garder la section Équipe ? Avec quelles personnes et quelles photos (à fournir dans `/images/`, avec leur accord) ?
+14. **Réseaux sociaux** : URL LinkedIn, Twitter/X et Facebook à fournir. Le bouton WhatsApp flottant est-il à conserver ?
+15. **Signification du sigle** : « CRF = Centre de Recherche et de Formation » (nouveau logo et page Contact). Je l'utilise comme sous-titre institutionnel. À confirmer.
 
-## C. Chiffres et affirmations de l'ancien site (non repris sans preuve)
-12. Chiffres incohérents entre pages et non sourcés : 500+ / 1000+ professionnels formés ; 95 % / 98 % de satisfaction ; 200+ entreprises ; +150 % ROI moyen ; 100+ projets ; 500+ études ; 15K+ répondants ; 95 % de précision prédictive. Lesquels sont prouvables ?
-13. « ISO, Qualité Certifiée » et « Méthodologie Certifiée ISO » : quelle norme, quel numéro de certificat ? Sinon, retirés.
-14. « Certifications Reconnues » et « Chef de projet IA (certification) » : quel organisme certifie ?
-15. Études de cas chiffrées (« Groupe Industriel Africain 95 % », « Organisation Internationale 85 % d'insertion », « Entreprise Technologique 88 % ») : peut-on les citer ? Sinon, retirées.
-16. COPAF 2026 sur l'ancien site : « 500+ participants, 25+ pays africains, 50+ conférenciers ». Cela contredit « 5 autorités portuaires, 4 pays » du brief. Je retiens la formule du brief, sauf avis contraire.
-17. Le « Diagnostic Gratuit » et la « Consultation Gratuite » restent-ils une offre réelle ?
-18. « Plus de dix ans de formation à grande échelle » (brief) : je le reprends tel quel ; une date de création est-elle disponible ?
+## C. Affirmations de l'ancien site retirées sauf preuve
+16. **Ancienneté contradictoire** : fondation en 2006 (frise), « 15 ans d'excellence » (accueil), « 18+ années » (À propos), « 5+ ans d'expertise » (Contact), « plus de dix ans » (brief). Quelle date de création retenir ?
+17. **Chiffres** contradictoires et non sourcés : 850+ / 1000+ / 5000+ / 500+ professionnels formés ; 45+ programmes ; 12 M€ de projets ; 98 % / 95 % de satisfaction ; 200+ entreprises ; 150+ missions ; 100+ projets ; 50+ experts ; 20+ / 25+ pays ; 500+ études ; 15K+ répondants ; +150 % de ROI. L'accueil affirme « Chiffres audités et mis à jour pour l'exercice 2024 ». Existe-t-il un document d'audit ? Sinon, aucun chiffre ne sera affiché.
+18. **Certifications** : « ISO 9001 », « Certifié QUALIOPI », « Méthodologie Certifiée ISO », « certifications reconnues ». QUALIOPI est une certification française réservée aux organismes de formation enregistrés en France. Merci de fournir les numéros de certificat et les organismes certificateurs, sinon ces mentions sont retirées.
+19. **Témoignages** : l'accueil affiche 6 témoignages nominatifs (Dr. Amadou Diallo, Mme Sarah Mensah, Jean-Pierre Kouamé, M. Ibrahima Sow, Dra. Fatoumata Bamba, Eng. Samuel Adeyemi). Certains citent des entreprises réelles (Sifca Groupe, Atlantique Télécom). Ce sont-ils de vrais clients, avec un accord écrit ? Sinon, ils sont retirés : un faux témoignage attribué à une entreprise réelle expose CRF Perfection juridiquement.
+20. **Études de cas chiffrées** (« Groupe Industriel Africain 95 % », etc.) : citables ou non ?
+21. **Engagements de service** : temps de réponse « garantis » (2 h / 24 h / 48 h), « support 24/7 pour clients premium », « Diagnostic Gratuit », « Consultation Gratuite ». Sont-ils réels et tenables ?
+22. **COPAF 2026** : l'ancien site annonce « 500+ participants, 25+ pays, 50+ conférenciers, 3 jours ». Je retiens la formule du brief, « 5 autorités portuaires, 4 pays ; 2 jours de conférence + 1 jour d'immersion ».
+23. **Visuels tiers** : l'image « STRATEGIC PARTNERS INC. » (logo d'une autre entreprise) et les photos génériques de la page Ressources ne seront pas reprises.
 
 ## D. Contenu à décider
-19. **Éditorial du Dr Oloutayo William Odah** (2026) : à mettre à jour pour 2027, ou à retirer ? Quelle fonction lui attribuer (DG ?). Photo autorisée (fournie dans `/images/`) ?
-20. **Programme « Business Thérapie »** et pôles génériques (RH, marketing, soft skills) : à conserver sur le nouveau site, alors qu'il cible les ports africains ?
-21. **Méthodologie de recherche** : « 4 étapes » annoncées, seules 2 visibles (« Cadrage & Collecte », « Analyse & Recommandations »). Étapes 3 et 4 à fournir.
-22. **Équipe, partenaires, références clients** : aucun élément dans les captures, donc emplacements `[À FOURNIR]` ou pas de section du tout. AGPAOC et PMAESA : leurs logos peuvent-ils être affichés (autorisation) ?
-23. **Sponsoring COPAF** (« Devenir Sponsor ») : à conserver ? Avec quel contact ou dossier ?
+24. **Blog / Actualités** : le menu annonce un blog, mais aucun article n'est visible. Existe-t-il des articles à reprendre ? Sinon, pas de page Actualités.
+25. **Domaines hors ports** : « Business Thérapie / Thérapie d'Entreprise », Marketing Digital, Soft Skills et pôle RH généraliste. Le nouveau site cible les autorités portuaires. Faut-il les garder (et où), ou s'en tenir au catalogue 2027 ?
+26. **Éditorial du DG** (daté 2026) : à réécrire pour 2027, ou à retirer ?
+27. **Mission, vision, valeurs** : je propose de reprendre la mission et les 4 valeurs (Passion, Collaboration, Innovation, Intégrité), dans un ton plus sobre et sans superlatifs. La « Vision 2030 » (« référence mondiale », « 20+ pays ») est retirée, sauf avis contraire.
+28. **Méthodologie de recherche** : « 4 étapes » sont annoncées, mais seules 2 sont visibles. Les étapes 3 et 4 sont à fournir.
+29. **Partenaires institutionnels** (AGPAOC, PMAESA) : peut-on afficher leurs noms et logos (autorisation, fichiers) ?
+30. **Sponsoring COPAF** (« Devenir Sponsor ») : à conserver ? Vers quel contact ou dossier ?
+31. **Texte animé de l'accueil** (« Capital Humai… ») : sans objet sur le nouveau site, qui n'aura pas d'animation gadget.
 
-## E. Inscription et légal
-24. **Textes à fournir** : conditions d'inscription (annulation, report, remboursement), politique de confidentialité, mentions légales (raison sociale, numéro d'immatriculation, siège, directeur de publication, hébergeur Hostinger).
-25. **Capacité par session** (compteur de places) : `[À FOURNIR]`.
-26. **Mention « confirmée après réception de la proforma réglée »** : à valider.
-27. **E-mails** : expéditeur des confirmations (ex. `no-reply@crfperfection.pro`) et fournisseur d'envoi (Resend, Brevo, SMTP Hostinger ?). L'ancien site utilisait EmailJS. Le DNS (SPF/DKIM) doit être configuré par la personne qui gère le domaine.
-28. **Supabase** : projet existant à utiliser ou nouveau projet ? Qui sont les administrateurs (adresses à inviter dans Supabase Auth) ?
-29. **Hostinger** : confirmer que le déploiement FTP se fait sur le compte de crfperfection.pro (secrets `FTP_*` à créer dans le nouveau dépôt).
+## E. Formulaires, inscription et légal
+32. **Liste « Service concerné »** du formulaire de contact : les options sont inconnues. Je propose les 4 rubriques, plus « Formation du catalogue (code) » et « Autre ».
+33. **Textes à fournir** : conditions d'inscription (annulation, report, remboursement), politique de confidentialité, mentions légales (raison sociale, immatriculation, siège, directeur de publication, hébergeur).
+34. **Capacité par session** (compteur de places) : `[À FOURNIR]`.
+35. **Mention « confirmée après réception de la proforma réglée »** : à valider.
+36. **E-mails** : expéditeur des confirmations (ex. `no-reply@crfperfection.pro`) et service d'envoi. L'ancien site utilisait EmailJS ; je propose Resend ou Brevo via une Edge Function Supabase. Il faudra configurer SPF/DKIM sur le domaine.
+37. **Supabase** : projet existant ou nouveau ? Quelles adresses administrateurs inviter ?
+38. **Hostinger** : confirmer que le déploiement FTP se fait sur l'hébergement de crfperfection.pro (secrets `FTP_*` à créer dans le nouveau dépôt).
 
 ## F. Catalogue 2027 : points connus à signaler (non tranchés)
-30. Coût et hébergement absents des fiches C1 à C9 (on affichera « Sur demande »).
-31. La Rubrique 4 oublie les DSI.
-32. Renvois du tableau « Enjeux 2027 » probablement faux.
-33. Tableau « Projets publics » incohérent avec les fiches B.
-34. Chiffre Suez à vérifier.
-35. Sessions parallèles à Mombasa et Dar es Salaam sur des publics qui se recoupent.
-36. Séminaire cyber T2 : juillet dans le Word, septembre sur l'affiche.
-> Ces points seront vérifiés et complétés dès la réception du Word.
+39. Coût et hébergement absents des fiches C1 à C9 (affichés « Sur demande »).
+40. La Rubrique 4 oublie les DSI.
+41. Renvois du tableau « Enjeux 2027 » probablement faux.
+42. Tableau « Projets publics » incohérent avec les fiches B.
+43. Chiffre Suez à vérifier.
+44. Sessions parallèles à Mombasa et Dar es Salaam sur des publics qui se recoupent.
+45. Séminaire cyber T2 : juillet dans le Word, septembre sur l'affiche.
+> Ces points seront vérifiés, et d'autres ajoutés, à la réception du Word.
 
 ## G. Traduction anglaise
-37. La liste des pages et sections `TODO-EN` sera tenue ici à partir de l'étape 3.
+46. La liste des pages et sections `TODO-EN` sera tenue ici à partir de l'étape 3.

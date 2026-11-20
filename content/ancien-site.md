@@ -1,9 +1,9 @@
 # Ancien site crfperfection.pro : transcription fidèle
 
-Source : 5 captures pleine page (PDF image, 18/11/2026). Textes recopiés tels quels, majuscules et ponctuation comprises.
+Source : 9 captures pleine page (PDF image, 18 et 20/11/2026) + 3 captures des menus déroulants. Textes recopiés tels quels, majuscules et ponctuation comprises.
 Règle : rien n'est inventé. Ce qui n'est pas visible est marqué `[ILLISIBLE : à fournir]` ou `[NON CAPTURÉ]`.
 
-> **Pages non capturées** (existent probablement, d'après le menu et le pied de page) : Accueil, pages du menu « Domaines d'Expertise » et « À Propos », Contact, Recherche, Politique de Confidentialité, Conditions d'Utilisation. `[NON CAPTURÉ : captures à fournir]`
+> **Pages non capturées** : les 5 sous-pages « Domaines d'Expertise » autres que Formation & Développement (Marketing Digital, Intelligence Artificielle (IA), Management de Projets Numériques, Management des Ressources Humaines, Business Thérapie), Recherche, Politique de Confidentialité, Conditions d'Utilisation. `[NON CAPTURÉ : captures à fournir si leur contenu doit être repris]`
 
 ---
 
@@ -12,7 +12,9 @@ Règle : rien n'est inventé. Ce qui n'est pas visible est marqué `[ILLISIBLE :
 ### En-tête
 - Logo (ancienne version, différente des logos fournis) + « CRF PERFECTION » / « Excellence & Formation »
 - Menu : « Accueil » · « Nos Services ▾ » · « Domaines d'Expertise ▾ » · « À Propos ▾ » · « Contact » · « Recherche » (icône loupe)
-- Contenu des 3 menus déroulants : `[NON CAPTURÉ : à fournir]`
+- « Nos Services ▾ » : Formations Professionnelles · Conseil Stratégique · Organisation de Conférences · Études & Recherche
+- « Domaines d'Expertise ▾ » : Formation & Développement · Marketing Digital · Intelligence Artificielle (IA) · Management de Projets Numériques · Management des Ressources Humaines · Business Thérapie
+- « À Propos ▾ » : Notre Histoire, Vision & Équipe · Blog, Certifications & Partenaires
 
 ### Pied de page
 - Logo + « CRF PERFECTION »
@@ -23,6 +25,202 @@ Règle : rien n'est inventé. Ce qui n'est pas visible est marqué `[ILLISIBLE :
 - « © 2026 CRF Perfection – Cabinet International de Formation & Conseil. Tous droits réservés. » · « www.crfperfection.pro »
 - « Bâtissons ensemble les compétences de demain. »
 - Bouton flottant vert (bulle de discussion : WhatsApp ou chat, destination `[NON CAPTURÉ]`)
+
+---
+
+## Page : Accueil — `/`
+Capture du 20/11/2026, 08:32:56. 4 pages PDF.
+
+### Hero (fond sombre)
+- Étiquette : « L'EXCELLENCE EN MARCHE »
+- H1 : « Forger les **Leaders** de demain » (« Leaders » en doré)
+- Texte animé (effet machine à écrire) : « Capital Humai… » [ILLISIBLE : texte animé capturé en cours de frappe ; liste complète des mots à fournir]
+- Texte : « Des solutions sur mesure pour développer vos compétences et propulser votre entreprise vers le succès. »
+- Boutons : « Télécharger le catalogue » · « Démarrer un projet → »
+- Visuel : ancien logo « CRFPerfection, Centre de Recherche et de Formation » dans un panneau
+
+### Bandeau de chiffres
+- « 850+ » — « PROFESSIONNELS CERTIFIÉS »
+- « 45+ » — « PROGRAMMES CERTIFIÉS »
+- « 12M € » — « PROJETS RÉALISÉS »
+- « 15 ans » — « D'EXCELLENCE »
+- Mention : « Chiffres audités et mis à jour pour l'exercice 2024 »
+
+### Section « Accélérez la Transformation de **Votre Organisation** »
+- Sous-titre : « Huit domaines d'excellence pour propulser votre organisation vers les standards internationaux »
+- Onglets (8) avec sous-libellé :
+  - « Formation Professionnelle » — « 500+ Professionnels » (onglet actif)
+  - « Conseil Stratégique » — « Programmes Certifiés »
+  - « Intelligence Artificielle » — « Innovation Technologique »
+  - « Études & Recherches » — « 20+ Pays Africains »
+  - « Marketing Digital » — « Impact Mesurable »
+  - « Management de Projets » — « Excellence Livrée »
+  - « Management des RH » — « Talents Optimisés »
+  - « Thérapie d'Entreprise » — « Transformation Profonde »
+- Contenu de l'onglet actif « Formation Professionnelle » : « Programmes de formation certifiés conçus pour développer les compétences professionnelles et techniques des équipes africaines. »
+  - POINTS CLÉS : Programmes Certifiés · Formation Digitale · Accompagnement Personnalisé · Suivi Post-Formation
+  - Boutons : « En savoir plus → » · « Demander un devis »
+- Contenu des 7 autres onglets : [NON CAPTURÉ : à fournir]
+
+### Encadré sombre
+- H2 : « Besoin d'un accompagnement sur mesure ? »
+- Texte : « Nos experts sont à votre disposition pour analyser vos besoins et concevoir une solution adaptée »
+- Bouton : « Contactez-nous »
+
+### Section « NOTRE EXPERTISE » — « Nos Domaines d'**Intervention** »
+- Grande image : logo tiers « STRATEGIC PARTNERS INC. » (anneaux métalliques) — image d'illustration d'origine inconnue
+- « Formation & Renforcement » : « Programmes structurés de développement des compétences pour cadres et équipes institutionnelles, incluant formations certifiantes. »
+- « Accompagnement Institutionnel » : « Appui stratégique aux organisations publiques dans leurs processus de transformation digitale et modernisation administrative. »
+- « Études & Conseil Stratégique » : « Analyses approfondies et audits organisationnels pour l'optimisation des performances et l'innovation institutionnelle. »
+
+### Section « Accélérez la Transformation de Votre Organisation » (2e occurrence)
+- Texte : « Notre équipe d'experts vous accompagne dans la mise en œuvre de solutions innovantes adaptées aux enjeux stratégiques de votre institution. Bénéficiez d'un accompagnement personnalisé et de notre expertise reconnue. »
+- Bouton : « Demander une consultation gratuite → »
+
+### Section « SUCCÈS PARTAGÉS » — « La voix de nos **partenaires** »
+- Témoignage 1 : « "L'expertise du cabinet a été le catalyseur de notre restructuration. Leur approche de la 'Thérapie d'Entreprise' a restauré une culture de performance durable." » — Dr. Amadou Diallo, DIRECTEUR DE LA TRANSFORMATION, Banque Panafricaine d'Investissement
+- Témoignage 2 : « "Une révolution dans notre gestion de projets numériques. Le CRF Perfection ne se contente pas de conseiller, il livre des résultats opérationnels tangibles." » — Mme Sarah Mensah, COMMISSAIRE AUX GRANDS TRAVAUX, Ministère de l'Économie Numérique
+- Témoignage 3 : « "Le programme de formation certifiant a transformé notre top management. Nous parlons désormais le langage de l'excellence mondiale et de l'innovation IA." » — Jean-Pierre Kouamé, DRH GROUPE, Leader Régional de l'Énergie
+- Chiffres : « 98% » — « TAUX DE SATISFACTION » · « 150+ » — « MISSIONS RÉUSSIES »
+
+### Section « Ils bâtissent l'avenir avec **CRF Perfection** »
+- Sous-titre : « Plus qu'un cabinet, un moteur de performance pour les leaders africains en quête d'excellence. »
+- « Rigueur de Classe Mondiale » : « Une méthodologie d'élite adaptée aux réalités des marchés émergents. »
+- « Écosystème de Décideurs » : « Intégrez un réseau influent de leaders et de bâtisseurs du continent. »
+- « Impact Haute Vélocité » : « Accélérez votre croissance avec des résultats visibles dès le premier trimestre. »
+- « Mentorat Stratégique » : « Un accompagnement de proximité par des experts seniors dédiés. »
+- Témoignage 4 : « « L'approche du cabinet a redéfini notre vision stratégique. Leur maîtrise des enjeux locaux est un atout rare. » » — M. Ibrahima Sow, DIRECTEUR DE L'INNOVATION, Atlantique Télécom • Bénin
+- Témoignage 5 : « « La qualité de l'ingénierie pédagogique a permis une montée en compétence fulgurante de nos cadres supérieurs. » » — Dra. Fatoumata Bamba, VP CAPITAL HUMAIN, Sifca Groupe • Côte d'Ivoire
+- Témoignage 6 : « « Un partenaire indispensable qui allie intégrité, agilité et excellence opérationnelle. » » — Eng. Samuel Adeyemi, CHIEF OPERATIONS OFFICER, Lagos Power Solutions • Nigéria
+
+### Appel à l'action
+- H2 : « Votre transformation commence ici »
+- Texte : « Rejoignez les institutions qui font bouger les lignes. Planifiez votre première session de conseil aujourd'hui. »
+- Boutons : « Inscrire mon organisation » · « Parler à un expert »
+
+---
+
+## Page : Notre Histoire, Vision & Équipe — `/about/company-overview`
+Capture du 20/11/2026, 08:34:23. 5 pages PDF. Plusieurs blocs animés au défilement apparaissent pâles ou vides dans la capture.
+
+### Hero (fond sombre)
+- Étiquette : « À PROPOS DE NOUS »
+- H1 : « Qui Sommes-Nous ? »
+- Texte : « Découvrez l'histoire, la vision et l'équipe qui font de CRF PERFECTION un leader dans la formation professionnelle et le conseil stratégique. »
+- Boutons d'ancre : « Notre Histoire » · « Notre Vision » · « Notre Équipe »
+
+### Section « Notre Histoire Exceptionnelle »
+- H2 : « À Propos de CRF PERFECTION »
+- Sous-titre : « De l'Expertise Pionnière au Renouveau Stratégique par l'Intelligence Artificielle »
+- Texte : « Découvrez l'évolution extraordinaire du Cabinet CRF Perfection, une histoire captivante de croissance stratégique, d'innovation technologique et de transformation organisationnelle qui s'étend sur plus de 18 ans d'expertise reconnue dans le domaine du conseil de haut niveau et de la formation professionnelle d'excellence. »
+- « Notre Mission Stratégique » : « Accompagner les entreprises dans leur transformation numérique et organisationnelle à travers un conseil stratégique visionnaire, des solutions innovantes et une expertise technologique avancée, parfaitement adaptées aux défis complexes du 21ème siècle. »
+- Panneau à droite : [NON RENDU dans la capture : image ou contenu animé]
+
+### « Notre Parcours d'Excellence » (frise)
+- « 2006 » — « Fondation » — « Création du Cabinet CRF Perfection avec une vision d'excellence »
+- « 2010 » — « Expansion Régionale » — « Extension de nos services à travers l'Afrique de l'Ouest »
+- « 2020 » — « Transformation Digitale » — « Intégration de l'IA et des technologies avancées »
+- « 2024 » — « Leadership Africain » — « Référence en formation professionnelle et conseil stratégique »
+- Chiffres : « 18+ » Années d'Excellence · « 5000+ » Professionnels Formés · « 200+ » Entreprises Accompagnées · « 50+ » Experts Qualifiés
+
+### Section « Notre Vision d'Avenir »
+- H2 : « Vers l'Excellence et **la Transformation** »
+- « Forts de notre héritage, nous aspirons à devenir le **partenaire stratégique de référence** pour les entreprises en quête d'excellence. »
+- « Notre Mission Transformationnelle » : « Transformer les défis de nos clients en **opportunités de croissance durable** en exploitant la puissance du savoir technologique, scientifique et de l'Intelligence Artificielle pour créer un avantage concurrentiel durable. »
+- « Nos Piliers Stratégiques » :
+  - « Excellence Opérationnelle » : « Fournir des services de la plus haute qualité avec des standards internationaux »
+  - « Innovation Technologique » : « Intégrer l'IA et les technologies émergentes dans nos solutions »
+  - « Transformation Durable » : « Accompagner les entreprises vers une croissance pérenne et responsable »
+  - « Partenariat Stratégique » : « Devenir le partenaire de référence pour l'excellence organisationnelle » [fin de phrase possiblement coupée]
+- Encadré sombre « Notre Vision 2030 » : « Être le partenaire de référence mondiale pour l'innovation technologique, la digitalisation avancée et l'excellence opérationnelle »
+  - « Expansion Internationale » — « Présence dans 20+ pays africains »
+  - « Innovation IA » — « Leader en solutions IA pour entreprises »
+  - « Excellence Certifiée » — « Standards internationaux reconnus »
+
+### Section « Notre Équipe d'Excellence »
+- H2 : « Rencontrez Nos **Experts & Formateurs** »
+- « Une équipe passionnée de professionnels dévoués à votre succès et à l'excellence de vos projets »
+- Chiffres : « 50+ » Experts Certifiés · « 25+ » Années d'Expérience Cumulée · « 15+ » Domaines d'Expertise
+- « Notre Leadership » :
+  - « Dr. William Odah » — « Directeur Général » — « Vision Stratégie & Leadership » (carte pâle, photo partielle)
+  - « Alida Ayena » — « Assistante de Direction » (photo)
+- « Notre Culture d'Excellence » : « Des valeurs fortes qui guident notre action quotidienne et notre engagement envers nos clients »
+  - « Passion » — « Dévouement total à l'excellence »
+  - « Collaboration » — « Travail d'équipe et synergie »
+  - « Innovation » — « Créativité et amélioration continue »
+  - « Intégrité » — « Éthique et transparence »
+
+### Appel à l'action (bordeaux)
+- H2 : « Prêt à Transformer Votre Avenir ? »
+- « Rejoignez des milliers de professionnels qui ont choisi CRF PERFECTION pour leur développement. »
+- Bouton : « Contactez-Nous → »
+
+---
+
+## Page : Blog, Certifications & Partenaires — `/about/resources`
+Capture du 20/11/2026, 08:35:02. 3 pages PDF.
+
+### Hero (photo de réunion assombrie)
+- Étiquette : « RESSOURCES & RÉSEAU »
+- H1 : « Blog, Certifications & Partenaires »
+- Texte : « Explorez nos ressources, découvrez nos certifications et rencontrez nos partenaires stratégiques qui contribuent à notre excellence. »
+
+### 3 blocs (photo + texte + bouton « Explorer → »)
+- « Blog » : « Articles, insights et actualités sur la formation professionnelle » — Articles d'experts · Tendances du marché · Études de cas · Guides pratiques
+- « Certifications » : « Nos accréditations et certifications professionnelles » — Certifications ISO · Accréditations officielles · Labels de qualité · Reconnaissances internationales
+- « Partenaires » : « Notre réseau de partenaires stratégiques et collaborateurs » — Partenaires académiques · Entreprises partenaires · Réseaux professionnels · Collaborations internationales
+- Destination des boutons « Explorer » et existence d'articles : [NON CAPTURÉ : aucun article visible]
+- Photos : images de banque d'images / générées (personnes non africaines, bureaux génériques)
+
+### « Pourquoi Choisir CRF PERFECTION ? »
+- « Notre engagement envers l'excellence se reflète dans nos ressources et notre réseau »
+- « Contenu Actualisé » — « Articles et ressources régulièrement mis à jour »
+- « Certifications Reconnues » — « Accréditations officielles et labels de qualité »
+- « Réseau International » — « Partenaires stratégiques à travers le monde »
+- « Communauté Active » — « Échanges et collaboration entre professionnels »
+
+### Appel à l'action (bordeaux)
+- H2 : « Rejoignez Notre Réseau d'Excellence »
+- « Accédez à nos ressources exclusives et bénéficiez de notre réseau de partenaires. »
+- Boutons : « Lire le Blog » · « Nous Contacter »
+
+---
+
+## Page : Contact — `/contact`
+Capture du 20/11/2026, 08:35:27. 3 pages PDF.
+
+### Hero (fond sombre)
+- Étiquette : « Contactez-nous »
+- H1 : « Parlons de Votre **Projet** »
+- « Notre équipe d'experts est à votre disposition pour vous accompagner dans vos projets de formation, conseil stratégique et transformation organisationnelle. »
+- Chiffres : « 2h » Réponse urgente · « 24h » Réponse standard · « 95% » Taux satisfaction · « 24/7 » Support disponible
+
+### « Plusieurs Moyens de Nous Contacter » — « Choisissez le canal qui vous convient le mieux »
+- « Téléphone » — « Appelez-nous directement » — « +1 (240) 978-4155 »
+- « WhatsApp » — « Chat instantané » — « +1 (240) 978-4155 »
+- « Email » — « Écrivez-nous » — « contact@crfperfection.pro »
+- « Adresse » — « Visitez-nous » — « 1901 Pennsylvania Avenue NW Washington D.C. 20006 »
+
+### Formulaire « Envoyez-nous un Message »
+- « Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais. »
+- Champs : Nom complet * · Email professionnel * · Téléphone · Entreprise · Service concerné * (liste déroulante « Sélectionnez un service », options [NON CAPTURÉ]) · Message *
+- Bouton : « Envoyer le message »
+- Aucune case de consentement RGPD visible
+
+### Colonne de droite
+- Carte : « CRF PERFECTION » — « Centre de Recherche et de Formation » — « Cabinet international de formation, de conseil stratégique et de recherche appliquée, basé aux États-Unis, avec des agences en Afrique de l'Ouest (Bénin, Côte d'Ivoire, Togo). »
+- « Temps de Réponse Garantis » : « Urgence Critique » — « Crise organisationnelle majeure » — « 2 heures » · « Consultation Standard » — « Demande d'information générale » — « 24 heures » · « Devis Personnalisé » — « Étude de projet complexe » — « 48 heures »
+- « Horaires d'Ouverture » : Lundi - Vendredi « 8h00 - 19h00 » · Samedi « 9h00 - 14h00 » · Dimanche « Fermé » (fuseau horaire non précisé) · « Support d'urgence disponible 24/7 pour nos clients premium »
+- « Nos Accréditations » : « ISO 9001 » · « Certifié QUALIOPI » · « 5+ ans d'expertise » · « 95% satisfaction »
+
+### « Notre Localisation »
+- « Visitez notre siège social à Washington D.C. » — carte Google Maps (non chargée dans la capture)
+
+### Appel à l'action (sombre)
+- H2 : « Prêt à Transformer Votre Organisation ? »
+- « Nos experts sont prêts à vous accompagner dans vos projets de formation, conseil stratégique et transformation digitale. »
+- Boutons : « Appelez-nous » · « WhatsApp »
+
 
 ---
 
